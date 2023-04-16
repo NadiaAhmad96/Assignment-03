@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Recommendation App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Movie Recommendation App</h1>
+    <form>
+      <label for="genres">Genres:</label>
+      <select id="genres">
+        <option value="">--Select a genre--</option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama">Drama</option>
+        <option value="Science Fiction">Science Fiction</option>
+      </select>
+      <br>
+      <label for="year">Year:</label>
+      <select id="year">
+        <option value="">--Select a year--</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+      </select>
+      <br>
+      <label for="rating">Rating:</label>
+      <select id="rating">
+        <option value="">--Select a rating--</option>
+        <option value="8">8+</option>
+        <option value="7">7+</option>
+        <option value="6">6+</option>
+      </select>
+      <br>
+      <label for="language">Language:</label>
+      <select id="language">
+        <option value="">--Select a language--</option>
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+        <option value="French">French</option>
+      </select>
+      <br>
+      <button type="button" onclick="getRecommendations()">Get Recommendations</button>
+    </form>
+    <div id="recommendations"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
